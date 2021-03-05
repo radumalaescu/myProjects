@@ -1,0 +1,36 @@
+.menulist {
+    margin: 0;
+    display: none;
+    transition: 0.5s;
+    z-index: 1;
+
+}
+
+.menulistitem {
+    display: inline;
+    color: white;
+    margin-right: 50px;
+    font-size: 22px;
+}
+
+@media (min-width: 768px) { 
+.menulist {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 0 !important;
+    position: fixed;
+}
+}
+
+@media (min-width: 992px) { 
+    .menulist {
+        justify-content: flex-end;
+        padding-right: 70px;
+    }
+
+    .menulistitem {
+        margin-right: 70px;
+    }
+ }

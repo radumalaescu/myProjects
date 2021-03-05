@@ -1,0 +1,50 @@
+#contactmediv {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-behavior: smooth;
+}
+
+#contactmeheading {
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    margin-top: 0;
+}
+
+#contactlistdiv {
+    box-sizing: border-box;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#contactlist {
+    list-style: none;
+}
+
+.licontact {
+    margin-bottom: 10px;
+}
+
+.iconscontact {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+}
+
+#iconscontactdiv {
+    margin: auto;
+}
+
+#copyrightp {
+    color: #333333;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 25px;
+    background-color: #fafafa;
+    font-size: 15px;
+    padding-bottom: 25px;
+}
