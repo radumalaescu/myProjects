@@ -158,3 +158,23 @@ img:hover {
 	height: 40px;
 	cursor: pointer;
 }
+
+@media (max-width: 575.98px) { 
+	#theboardgame {
+		margin-left: 0;
+	}
+
+	#score {
+		margin-left: 0;
+	}
+
+	h1{
+		margin-left: 90px;
+	}
+
+	#theresult {
+		width: 100%;
+		margin-left: 50px;
+	}
+	
+ }
