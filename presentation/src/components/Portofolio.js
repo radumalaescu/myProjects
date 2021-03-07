@@ -17,7 +17,7 @@ const Portofolio = () => {
             <a href="http://www.rockpaperscissors.great-site.net" target="_blank">
             <img src={rockpaperscissors} alt="Rock Paper Scissors"></img></a></div>
             <div className="portofolioitem"> 
-            <a href="www.http://radumdfr.great-site.net/" target="_blank">
+            <a href="http://radumdfr.great-site.net/" target="_blank">
             <img src={tictactoe} alt="Tic Tac Toe"></img></a></div>
             <div className="portofolioitem"> 
             <img src={underconstruction} alt="Under construction"></img></div>

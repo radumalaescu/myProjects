@@ -27,16 +27,10 @@
     opacity: 1;
 }
 
-img[alt="Under construction"] {
+img {
     width: 100%;
     height: 100%;
-    border-radius: 5px;;
-}
-
-img[alt="Rock Paper Scissors"] {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;;
+    border-radius: 5px;
 }
 
 #portofolioitemdivtoflex {
@@ -93,6 +87,11 @@ img[alt="Rock Paper Scissors"] {
     }
 
     .portofolioitem {
+        width: 260px;
+        height: 175px;
+    }
+
+    img {
         width: 260px;
         height: 175px;
     }
