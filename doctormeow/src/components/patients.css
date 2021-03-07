@@ -1,0 +1,47 @@
+.patientsheading {
+    padding-top: 50px;
+    background-color: white;
+    text-align: center;
+}
+
+.patientstable {
+    display: grid;
+}
+
+.firstcolumn {
+    text-align: center;
+    grid-column: 1;
+}
+
+img[alt="Under Construction"] {
+    width: 250px;
+    height: 150px;
+    padding-top: 100px;
+    animation-name: constructionanimation;
+    animation-duration: 1s;
+}
+
+@keyframes constructionanimation {
+    10% {margin-top: -2500px;}
+    100% {padding-top: 100px;}
+}
+
+#patientsconstruction {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+	img[alt="Under Construction"] {
+        width: 450px;
+        height: 350px;
+        padding-top: 200px;
+        animation-name: constructionanimation;
+        animation-duration: 1s;
+    }
+
+    @keyframes constructionanimation {
+        10% {margin-top: -2500px;}
+        100% {padding-top: 200px;}
+    }
+}

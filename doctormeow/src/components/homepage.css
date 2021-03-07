@@ -1,0 +1,83 @@
+.homepage {
+	width: 100%;
+	display: block;
+    height: 100%;
+}
+
+.homeheading {
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 30px;
+	color: #202020;
+	padding-top: 20vh;
+	animation-name: h1animation;
+	animation-duration: 3s;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
+	margin-top: 0;
+}
+
+#doctormeowspan {
+	color: #D91E2E;
+}
+
+.catdoctorimage {
+	background-image: url("../images/meowdoctor.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 300px;
+	position: absolute;
+	top: 45vh;
+	animation-name: meowimage;
+	animation-duration: 5s;
+}
+
+@keyframes h1animation {
+	0% {padding-top: 25vh;
+	    opacity: 0}
+	50% {padding-top: 25vh;
+	    opacity: 0}
+	100% {padding-top: 20vh;
+	     opacity: 1}
+}
+
+@keyframes meowimage {
+	0% {opacity: 0}
+	50% {opacity: 0}
+	100% {opacity: 1}
+}
+
+@media (min-width: 768px) { 
+	.homeheading {
+		font-size: 50px;
+	}
+	.catdoctorimage {
+		height: 550px;
+	}
+ }
+
+ @media (min-width: 992px) { 
+
+	.catdoctorimage {
+		width: 50%;
+	}
+
+  }
+
+  @media (min-width: 1200px) {
+	.homeheading {
+		padding-top: 15vh;
+		font-size: 40px;
+	}
+
+	@keyframes h1animation {
+		0% {padding-top: 20vh;
+			opacity: 0}
+		50% {padding-top: 20vh;
+			opacity: 0}
+		100% {padding-top: 15vh;
+			 opacity: 1}
+	}
+  }
