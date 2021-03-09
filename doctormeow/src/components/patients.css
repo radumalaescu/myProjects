@@ -1,47 +1,88 @@
-.patientsheading {
-    padding-top: 50px;
-    background-color: white;
+
+#patientsheading {
+    margin-top: 10px;
     text-align: center;
+}
+
+.patientfirstline {
+    display: grid;
+    margin-left: 20px;
 }
 
 .patientstable {
     display: grid;
+    margin-left: 20px;
 }
 
-.firstcolumn {
-    text-align: center;
-    grid-column: 1;
+.line1 {
+    grid-row: 1;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+.line {
+    grid-row: 1;
+    text-align: left;
+    font-size: 14px;
+}
+
+#colname {
+    width: 85px;
+}
+
+#colnamevalue {
+    width: 85px;
+}
+
+#ageline {
+    padding-left: 17px;
+}
+
+#insuranceline {
+    padding-left: 10px;
 }
 
 img[alt="Under Construction"] {
     width: 250px;
     height: 150px;
-    padding-top: 100px;
-    animation-name: constructionanimation;
-    animation-duration: 1s;
+    margin-left: 70px;
+    margin-top: 100px;
 }
 
-@keyframes constructionanimation {
-    10% {margin-top: -2500px;}
-    100% {padding-top: 100px;}
-}
-
-#patientsconstruction {
-    display: flex;
-    justify-content: center;
-}
 
 @media (min-width: 768px) {
 	img[alt="Under Construction"] {
         width: 450px;
         height: 350px;
         padding-top: 200px;
-        animation-name: constructionanimation;
-        animation-duration: 1s;
+        margin-left: 130px;
+    }
+}
+
+@media (min-width: 992px){
+
+    #patientsheading {
+		margin-top: 0;
+		padding-top: 10px;
+	}
+
+    #patientsconstruction {
+        padding-left: 30px;
+        margin-left: 0;
+        background-color: #00000008;
+        padding-bottom: 20px;
     }
 
-    @keyframes constructionanimation {
-        10% {margin-top: -2500px;}
-        100% {padding-top: 200px;}
+    img[alt="Under Construction"] {
+        margin-left: 250px;
+    }
+}
+
+@media (min-width: 1200px){ 
+    img[alt="Under Construction"] {
+        margin-left: 30%;
+        padding-top: 50px;
     }
 }

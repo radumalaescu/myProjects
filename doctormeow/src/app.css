@@ -7,14 +7,14 @@
 	position: absolute;
 	background-color: #D91E2E;
 	width: 100%;
-	height: 228px;
+	height: 180px;
 	animation-name: navlistmenuanimation;
 	animation-duration: 1s;
 }
 
 @keyframes navlistmenuanimation {
 	0%{height: 0}
-	100% {height: 228px}
+	100% {height: 180px;}
 }
 
 .ullistmenu {
@@ -33,7 +33,7 @@ li {
 
 a {
 	color: white;
-	font-size: 25px;
+	font-size: 20px;
 	text-align: center;
 	text-decoration: none;
 	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
@@ -48,18 +48,19 @@ a:hover {
 @media (min-width: 992px) { 
 	.ullistmenu {
 	  display: flex;
-	  justify-content: space-around;
+	  justify-content: flex-end;
 	}
 	a {
-		font-size: 35px;
+		font-size: 25px;
+		padding-right: 50px;
 	}
 	.navlistmenu {
-		height: 90px;
+		height: 70px;
 	}
 
 	@keyframes navlistmenuanimation {
 		0%{height: 0}
-		100% {height: 90px}
+		100% {height: 70px}
 	}
 
 	.catdoctorimage {

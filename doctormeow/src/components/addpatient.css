@@ -8,7 +8,7 @@
 	text-align: center;
     font-family: sans-serif;
     font-size: 30px;
-    padding-top: 50px;
+    padding-top: 30px;
     margin: 0;
 }
 
@@ -32,10 +32,11 @@ label {
 	margin-top: 20px;
 }
 
-#submitaddpatient {
+#submitaddpatient, #addpatientbutton{
 	color: white;
-	width: 100%;
+	width: 90%;
 	margin-top: 20px;
+	margin-left: 5%;
 	border-radius: 20px;
 	padding: 10px;
 	background-image: linear-gradient(to right, #D91E2E , #991520);
@@ -44,13 +45,14 @@ label {
 	outline: none;
 }
 
-
-#patientshiddencomponent {
+img[alt="Add Patient"] {
 	display: none;
 }
 
-img[alt="Add Patient"] {
-	display: none;
+@media (min-width: 768px) {
+	#patientsconstruction {
+		margin-left: 30px;
+	}
 }
 
 @media (min-width: 992px) { 
@@ -62,10 +64,9 @@ img[alt="Add Patient"] {
 	}
 
 	.addpatient {
-		display: flex;
-		justify-content: space-between;
-		height: 650px;
+		height: 500px;
 		background-color: #00000008;
+		position: relative;
 	}
 	
 	form {
@@ -75,9 +76,25 @@ img[alt="Add Patient"] {
 	}
 
 	img[alt="Add Patient"] {
-		display: block;
-		width: 60%;
-		height: 650px;
+		width: 50%;
+		height: 500px;
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		right: 0;
 	}
 
+	#submitaddpatient {
+		width: 30%;
+	}
+
+	#addpatientbutton {
+		margin-top: 10px;
+	}
+ }
+
+ @media (min-width: 1200px) {
+	 #submitaddpatient {
+		 margin-left: 50px;
+	 }
  }

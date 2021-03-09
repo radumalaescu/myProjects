@@ -24,10 +24,7 @@ const App = () => {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
-                  <Link to="/addpatient">Add Patient</Link>
-                </li>
-                <li>
-                  <Link to="/patients">Patients</Link>
+                  <Link to="/addpatient">Patients</Link>
                 </li>
                 <li>
                   <Link to="/appointments">Appointments</Link>
@@ -41,7 +38,7 @@ const App = () => {
               <Route path="/addpatient">
                 <Addpatient />
               </Route>
-              <Route path="/patients">
+              <Route path="/addpatient" component={Patients}>
                 <Patients />
               </Route>
               <Route path="/appointments">

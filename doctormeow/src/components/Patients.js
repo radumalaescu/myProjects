@@ -1,24 +1,26 @@
 import React from 'react'
 import './patients.css'
-import underconstruction from '../images/underconstruction.jpg'
 
 const Patients = ({patientsData}) => {
-    console.log(patientsData)
     return (
         <div id="patientsconstruction">
-            {/* <h1 className="patientsheading">Patients</h1>
-            { patientsData.map((el) => {
-            <div className="patientstable">
-                <span id="name" className="firstcolumn">Name</span>
-                <span id="birthday" className="firstcolumn">Date of Birth</span>
-                <span id="instype" className="firstcolumn">Type of Insurance</span>
-                <span id="age" className="firstcolumn">Age</span>
-                <span id="gender" className="firstcolumn">Gender</span>
-                <span id="cnp" className="firstcolumn">CNP</span> 
+            <h1 id="patientsheading">Patients</h1>
+            <div className="patientfirstline">
+                <span className="line1" id="colname">Name</span>
+                <span className="line1" id="ageline">Age</span>
+                <span className="line1" id="insuranceline">Insurace</span>
+                <span className="line1" id="gender">Gender</span>
+                </div>
                 
-            </div>
-            }} */}
-            <img src={underconstruction} alt="Under Construction"></img>
+            {patientsData.map((el, id1) => (
+                <div className="patientstable" key={id1}>
+                <span className="line" id="colnamevalue">{el.name}</span>
+                <span className="line">{el.age}</span>
+                <span className="line">{el.insurance}</span>
+                <span className="line">{el.gender}</span>
+                </div>
+            ))}
+            
         </div>
     )
 }
