@@ -38,7 +38,7 @@ const App = () => {
               <Route path="/addpatient">
                 <Addpatient />
               </Route>
-              <Route path="/addpatient" component={Patients}>
+              <Route path="/addpatient">
                 <Patients />
               </Route>
               <Route path="/appointments">
