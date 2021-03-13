@@ -36,6 +36,10 @@ const [insuranceType, setInsuranceType] = useState("")
 const [age, setAge] = useState()
 const [gender, setGender] = useState("")
 const [showForm, setShowForm] = useState(false)
+const [errorName, setErrorName] = useState ()
+const [errorAge, setErrorAge] = useState ()
+const [errorInsurance, setErrorInsurance] = useState ()
+const [errorGender, setErrorGender] = useState ()
 
 const fullNameChange = (event) => {
     setFullName(event.target.value)
@@ -57,22 +61,41 @@ const genderChange = (event) => {
 }
 
 const newPatient = () => {
+
     if (fullName === "") {
-        return alert("Plese enter the name!")
-    }
+        setErrorName("*Please enter a name!")
+   }
+    
+    if (fullName !== "") {
+        setErrorName("")
+   }
 
     if (!age) {
-        return alert("Please enter the age!")
+        setErrorAge("*Please enter the age!")
     }
 
-    if (insuranceType.toUpperCase() !== "PUBLIC" && insuranceType.toUpperCase() !== "PRIVATE" ) {
-        return alert("Please set a valid Type of Insurance!")
-    } 
-    
-    if (gender.toUpperCase() !== "MALE" && gender.toUpperCase() !== "FEMALE") {
-        return alert ("Please enter a valid gender!")
+    if (age) {
+        setErrorAge("")
     }
-    else {
+
+    if (insuranceType.toUpperCase() === "PUBLIC" || insuranceType.toUpperCase() === "PRIVATE" ) {
+        setErrorInsurance("")
+     } 
+
+    if (insuranceType.toUpperCase() !== "PUBLIC" && insuranceType.toUpperCase() !== "PRIVATE" ) {
+        setErrorInsurance("*Please enter a valid type of insurance!")
+    } 
+
+    if (gender.toUpperCase() !== "MALE" && gender.toUpperCase() !== "FEMALE") {
+        setErrorGender("*Please enter a valid gender!")
+    }
+
+    if (gender.toUpperCase() === "MALE" || gender.toUpperCase() === "FEMALE") {
+        setErrorGender("")
+    }
+
+    if(fullName !== "" && age && (insuranceType.toUpperCase() === "PUBLIC" || insuranceType.toUpperCase() === "PRIVATE")
+        && (gender.toUpperCase() === "MALE" || gender.toUpperCase() === "FEMALE")) {
 
     setPatient([...patient, {name: fullName,
     insurance: insuranceType.charAt(0).toUpperCase() + insuranceType.slice(1).toLowerCase(),
@@ -96,14 +119,18 @@ const newPatient = () => {
                 <div className="addpatient">
                 <form>
                 <label htmlFor="fullname">Full Name</label>
+                <span className="errortext">{errorName}</span>
                 <input type="text" name="fullname" placeholder="Full Name" onChange={(event) => fullNameChange(event)} />
                 <label htmlFor="cnp">CNP</label>
                 <input type="number" name="cnp" placeholder="CNP" />
                 <label htmlFor="typeofinsurance">Type of Insurance</label>
+                <span className="errortext">{errorInsurance}</span>
                 <input type="text" name="typeofinsurance" placeholder="Public / Private" onChange={(event) => typeOfInsuraceChange(event)} />
                 <label htmlFor="age">Age</label>
+                <span className="errortext">{errorAge}</span>
                 <input type="number" name="age" placeholder="Age" onChange={(event) => ageChange(event)} />
                 <label htmlFor="gender">Gender</label>
+                <span className="errortext">{errorGender}</span>
                 <input type="text" name="typeofinsurance" placeholder="Male / Female" onChange={(event) => genderChange(event)}/>
                 </form>
                 <img src={Imagepatient} alt="Add Patient"></img>

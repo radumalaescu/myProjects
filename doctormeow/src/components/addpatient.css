@@ -49,6 +49,11 @@ img[alt="Add Patient"] {
 	display: none;
 }
 
+.errortext {
+	font-size: 14px;
+	color: red;
+}
+
 @media (min-width: 768px) {
 	#patientsconstruction {
 		margin-left: 30px;
