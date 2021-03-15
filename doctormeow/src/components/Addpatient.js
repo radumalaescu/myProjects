@@ -109,6 +109,14 @@ const newPatient = () => {
 
     const showHideForm = () => {
         setShowForm(!showForm)
+        setFullName("")
+        setErrorName("")
+        setErrorInsurance("")
+        setInsuranceType("")
+        setAge()
+        setErrorAge("")
+        setGender("")
+        setErrorGender("")
     }
     return (
         <>
