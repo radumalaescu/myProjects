@@ -118,7 +118,8 @@ const equality = () => {
 	square[5].innerHTML !== "" &&
 	square[6].innerHTML !== "" &&
 	square[7].innerHTML !== "" &&
-	square[8].innerHTML !== "") {
+	square[8].innerHTML !== "")
+	 {
 		document.getElementById("boardgame").style.display = "none"
 		document.getElementById("drawboard").style.display = "flex"
 	}
