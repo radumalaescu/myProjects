@@ -36,11 +36,11 @@ const showCart = () => {
 
 const showProducts = () => {
 	mainContent.style.display = "none";
-	document.getElementById("ido").style.display = "block";
+	document.getElementById("productspage").style.display = "block";
 }
 
 const showHome = () => {
-	document.getElementById("ido").style.display = "none";
+	document.getElementById("productspage").style.display = "none";
 	mainContent.style.display = "block";
 }
 
