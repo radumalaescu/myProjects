@@ -1,0 +1,270 @@
+body {
+	background-color: #1a981a;
+	margin: 0;
+}
+
+h1 {
+	color: white;
+}
+
+main {
+	display: block;
+}
+
+.mainp {
+	color: white;
+}
+
+ul {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	margin: 0;
+
+}
+
+li {
+	padding-right: 70px;
+	padding-bottom: 20px;
+	color: white;
+	user-select: none;
+}
+
+span:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+header {
+	background-color: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	width: 100%;
+	top: 0;
+	padding-top: 20px;
+	font-size: 22px;
+}
+
+main {
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top: 150px;
+}
+
+#universulJucariilor {
+	display: flex;
+}
+
+#avantaje {
+	display: flex;
+}
+
+img[alt="Toys1"] {
+	margin-right: 30px;
+	width: 48%;
+	
+}
+
+img[alt="Toys2"] {
+	margin-left: 30px;
+	width: 48%;
+}
+
+img[alt="login"] {
+	margin-bottom: 20px;
+	width: 48%;
+}
+
+img[alt="CART"] {
+	width: 25px;
+	height: 25px;
+	cursor: pointer;
+}
+
+p {
+	font-size: 20px;
+	margin: 0;
+}
+
+.accountdivfull {
+	position: absolute;
+	width: 100%;
+	height: 160%;
+	background-color: rgba(0, 0, 0, 0.9);
+	top: 0;
+	justify-content: center;
+	display: none;
+	z-index: 999;
+}
+.accountdiv {
+	width: 350px;
+	height: 400px;
+	margin-top: 100px;
+	background-color: white;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 999;
+
+}
+
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+.registerinput {
+	width: 200px;
+	margin-bottom: 10px;
+	height: 35px;
+	outline: none;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+button {
+	width: 200px;
+	height: 25px;
+	border: none;
+	border-radius: 5px;
+	box-sizing: border-box;
+	background-color: #4CAF50;
+	outline: none;
+	color: white;
+}
+
+#registerdiv {
+	height: 500px;
+}
+
+#shoppingcartfullscreen {
+	position: absolute;
+	width: 100%;
+	height: 160%;
+	background-color: rgba(0, 0, 0, 0.9);
+	top: 0;
+	display: flex;
+	justify-content: center;
+	color: white;
+	display: none;
+	z-index: 999;
+}
+
+
+#shoppingcartcontent {
+	width: 60%;
+	height: 300px;
+	background-color: #1a981a;
+	position: relative;
+	top: 100px;
+	border-radius: 10px;
+	padding-top: 20px;
+	z-index: 999;
+}
+
+#shoppingcartdivgrid {
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#gridimage {
+	grid-row: 1;
+	grid-column: 1;
+	justify-self: center;
+}
+
+#gridname {
+	grid-row: 1;
+	grid-column: 2;
+	justify-self: center;
+}
+
+#gridmaterial {
+	grid-row: 1;
+	grid-column: 3;
+	justify-self: center;
+}
+
+#gridage {
+	grid-row: 1;
+	grid-column: 4;
+	justify-self: center;
+}
+
+#gridqty {
+	grid-row: 1;
+	grid-column: 5;
+	justify-self: center;
+}
+
+#emptycart {
+	text-align: center;
+	padding-top: 100px;
+}
+
+#nb {
+    margin: auto;
+    padding: 4px 10px 0;
+    text-align: center;
+    font-size: 10pt;
+    font-weight: bold;
+    color: #AAAAAA;
+    white-space: nowrap;
+    overflow: hidden;
+    min-width: 630px;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    line-height: 19px;
+    min-height: 19px;
+    max-height: 19px;
+}
+
+#ido{
+	display: none;
+	margin-top: 100px;
+}
+
+div.ido {
+    text-align: justify;
+    min-width: 740px;
+    max-width: 1200px;
+    margin: 10px auto 5px;
+    padding: 5px;
+    position: relative;
+    border-radius: 9px;
+}
+
+div#toppane {
+    margin: auto;
+}
+
+p.ip {
+    text-align: center;
+    clear: both;
+}
+
+div.dp {
+    width: 495px;
+    margin: 0 auto 5px;
+    text-align: center;
+    font-size: 8pt;
+}
+
+.gld {
+                display: grid;
+                grid-template-columns: repeat(5,1fr)
+            }
+
+
+
+
+
+
