@@ -9,6 +9,7 @@ const cartDivFullScreen = document.getElementById("shoppingcartfullscreen")
 const productsButton = document.getElementById("productsspan")
 const mainContent = document.querySelector("main")
 const homeButton = document.getElementById("homespan")
+const adminPageSpan = document.getElementById("adminpagespan")
 
 const showLogin = () => {
 	if(loginDivFullScreen.style.display === "flex") {
@@ -36,12 +37,20 @@ const showCart = () => {
 
 const showProducts = () => {
 	mainContent.style.display = "none";
-	document.getElementById("productspage").style.display = "block";
+	document.getElementById("adminpage").style.display = "none";
+	document.getElementById("ido").style.display = "block";
 }
 
 const showHome = () => {
-	document.getElementById("productspage").style.display = "none";
+	document.getElementById("ido").style.display = "none";
+	document.getElementById("adminpage").style.display = "none";
 	mainContent.style.display = "block";
+}
+
+const showAdminPage = () => {
+	document.getElementById("adminpage").style.display = "block";
+	mainContent.style.display = "none";
+	document.getElementById("ido").style.display = "none";
 }
 
 loginSpan.addEventListener("click", showLogin)
@@ -58,4 +67,5 @@ registerButton.addEventListener("click", showRegister)
 cartButton.addEventListener("click", showCart)
 productsButton.addEventListener("click", showProducts)
 homeButton.addEventListener("click", showHome)
+adminPageSpan.addEventListener("click", showAdminPage)
 
