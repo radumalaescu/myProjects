@@ -1,36 +1,36 @@
 import React, { Component } from 'react';
+import Validation from './components/Validation'
+import Char from './components/Char'
 import './App.css';
-import CharComponent from './components/CharComponent';
-import ValidationComponent from './components/ValidationComponent';
+
 
 class App extends Component {
-
   state = {
     inputText: ""
   }
-  inputLength = (event) => {
+  showText = (event) => {
     this.setState({
       inputText: event.target.value
     })
   }
-
-  deleteCharacter = (index) => {
-    let char = this.state.inputText.split("")
+  
+  deleteCharHandler = (index) => {
+    const char = this.state.inputText.split("")
     char.splice(index, 1)
-    let updatedChar = char.join("")
+    const updatedChar = char.join("")
     this.setState({inputText: updatedChar})
   }
 
   render() {
-    const charList = this.state.inputText.split("").map((char, index) => {
-      return <CharComponent character={char} clicked={() => this.deleteCharacter(index)} />
+    let chars = this.state.inputText.split("").map((char, index) => {
+      return <Char characters={char} clicked={() => this.deleteCharHandler(index)}/>
     })
 
     return (
       <div className="App">
-        <input type="text" onChange={this.inputLength}/>
-        <ValidationComponent textLength={this.state.inputText.split("").length}/>
-        {charList}
+        <input type="text" onChange={this.showText}/>
+        <Validation inputLength={this.state.inputText.split("").length} />
+        {chars}
       </div>
     );
   }
