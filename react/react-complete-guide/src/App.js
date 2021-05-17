@@ -57,7 +57,7 @@ class App extends Component {
       <div className="App">
         <h1>Hi, I am a React App</h1>
         <p>This is really working!!!</p>
-        <button onClick={this.togglePersonsHandler}>Show persons!</button>
+        <button className="button" onClick={this.togglePersonsHandler}>Show persons!</button>
         {persons}
       </div>
     );
