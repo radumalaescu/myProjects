@@ -11,7 +11,7 @@ function App() {
      <Aboutme />
      <Portofolio />
      <Contact />
-    </div>
+     </div>
   );
 }
 
