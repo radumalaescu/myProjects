@@ -12,7 +12,7 @@ function App() {
      <Portofolio />
      <Contact />
      </div>
-  );
+  );c
 }
 
 export default App;
