@@ -14,7 +14,6 @@ const Container = () => {
             .then(response => response.json())
             .then(response => setCountries(response))
     }, [])
-    console.log(inputValue)
 
     return (
         <div className={styles.container}>
