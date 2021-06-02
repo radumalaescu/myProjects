@@ -1,0 +1,59 @@
+.mydescription p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333333;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.mydescription img {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+}
+
+.mydescription span {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #339beb;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    box-sizing: border-box;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @media (min-width: 768px) { 
+    .mydescription p {
+        font-size: 18px;
+    }
+  
+    .mydescription img {
+        width: 45px;
+        height: 45px;
+    }
+  
+    .mydescription span {
+        width: 45px;
+        height: 45px;
+    }
+  
+  
+    }
+    @media (min-width: 992px){
+    .mydescription p {
+      font-size: 20px;
+  }
+  
+  }
+  
+  @media (min-width: 1200px) { 
+    .mydescription p {
+      font-size: 22px;
+  }
+  }

@@ -1,0 +1,43 @@
+.navbar {
+    margin: 0;
+    display: none;
+    transition: 0.5s;
+    z-index: 1;
+
+}
+
+.navbar li {
+    display: inline;
+    color: white;
+    margin-right: 50px;
+    font-size: 22px;
+    user-select: none;
+
+}
+
+
+.navbar ul li:hover {
+    color: #55acee;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) { 
+    .navbar {
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        box-sizing: border-box;
+        position: fixed;
+    }
+    }
+    
+    @media (min-width: 992px) { 
+        .navbar {
+            justify-content: flex-end;
+            padding-right: 70px;
+        }
+    
+        .navbar li {
+            margin-right: 70px;
+        }
+     }
