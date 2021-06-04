@@ -17,17 +17,17 @@ const Portofolio = (props, ref) => {
     return (
         <div className={styles.portofolio} ref={ref}>
             <h1 data-aos={"rotate-c"} data-aos-once={true} >Portofolio</h1>
-            <div className={styles.portofolioItemFlex} data-aos={"fade-up"} data-aos-delay={"800"} data-aos-once={true}>
-                <span>
+            <div className={styles.portofolioItemFlex}>
+                <span data-aos={"fade-up"} data-aos-delay={"800"} data-aos-once={true}>
                 <a href="http://www.countries.radumalaescu.ro/" target="_blank" rel="noreferrer">
                 <img src={countries} alt="Countries Api"></img></a></span>
-                <span>
+                <span data-aos={"fade-up"} data-aos-delay={"1200"} data-aos-once={true}>
                 <a href="http://www.doctormeow.radumalaescu.ro/" target="_blank" rel="noreferrer">
                 <img src={doctormeow} alt="Doctor Meow"></img></a></span>
-                <span> 
+                <span data-aos={"fade-up"} data-aos-delay={"1600"} data-aos-once={true}> 
                 <a href="http://www.rockpaperscissors.radumalaescu.ro/" target="_blank" rel="noreferrer">
                 <img src={rockpaperscissors} alt="Rock Paper Scissors"></img></a></span>
-                <span>
+                <span data-aos={"fade-up"} data-aos-delay={"2000"} data-aos-once={true}>
                 <a href="http://www.tictactoe.radumalaescu.ro/" target="_blank" rel="noreferrer">
                 <img src={tictactoe} alt="Tic Tac Toe"></img></a></span>
             </div>
