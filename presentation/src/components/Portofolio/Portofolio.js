@@ -1,15 +1,23 @@
-import React, { forwardRef } from 'react'
+import React, { forwardRef, useEffect } from 'react'
 import styles from './Portofolio.module.css'
 import rockpaperscissors from "../../images/rockpaperscissors.png"
 import doctormeow from "../../images/doctormeow.png"
 import tictactoe from "../../images/tictactoe.png"
 import countries from "../../images/countries.png"
+import AOS from 'aos'
+import "aos/dist/aos.css"
 
 const Portofolio = (props, ref) => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000
+        })
+    }, [])
+
     return (
         <div className={styles.portofolio} ref={ref}>
-            <h1>Portofolio</h1>
-            <div className={styles.portofolioItemFlex}>
+            <h1 data-aos={"rotate-c"} data-aos-once={true} >Portofolio</h1>
+            <div className={styles.portofolioItemFlex} data-aos={"fade-up"} data-aos-delay={"800"} data-aos-once={true}>
                 <span>
                 <a href="http://www.countries.radumalaescu.ro/" target="_blank" rel="noreferrer">
                 <img src={countries} alt="Countries Api"></img></a></span>

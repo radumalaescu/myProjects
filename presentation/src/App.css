@@ -1,0 +1,10 @@
+[data-aos="rotate-c"] {
+    transform: translateX(-800px) rotate(-540deg);
+    opacity: 0;
+    transition-property: transform, opacity;
+  }
+
+  [data-aos="rotate-c"].aos-animate {
+    transform: rotate(0deg);
+    opacity: 1;
+  }

@@ -17,7 +17,7 @@ const Header = ({scrollToHeader, scrollToAbout, scrollToPortofolio, scrollToCont
                  scrollToAbout={scrollToAbout} 
                  scrollToPortofolio={scrollToPortofolio}
                  scrollToContact={scrollToContact} />
-                <h1 >Front-End Web Developer</h1>
+                <h1>Front-End Web Developer</h1>
                 <p>with a huge thirst to learn</p>
             </div>
         </div>
