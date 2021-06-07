@@ -1,0 +1,64 @@
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.RonEur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#switch {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: 8px;
+    border-radius: 50%;
+    color:	#1E90FF;
+    background-color: white;
+    border: 2px solid 	#1E90FF;
+    outline: none;
+}
+
+.RonEur div {
+    width: 50%;
+}
+
+.RonEur img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: block;
+}
+
+.RonEur input {
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+}
+
+#convert {
+    width: 50%;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: #1E90FF;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.RonEur span {
+    font-size: 10px;
+    color:lightgrey;
+}
+
+.RonEur p {
+    color: red;
+    font-size: 10px;
+    margin: 0;
+}

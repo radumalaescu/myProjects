@@ -1,0 +1,25 @@
+.SingleAccount {
+    padding: 0 20px 0 20px;
+}
+
+.SingleAccount p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.SingleAccount span {
+    font-size: 12px;
+    color:lightgrey;
+}
+
+.SingleAccount img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 50%;
+
+}
+

@@ -1,0 +1,29 @@
+.Exchange {
+    background-color: white;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.Exchange ul {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 30% 30% 30%;
+    padding: 10px 0 20px 0;
+}
+
+.Exchange ul li {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.Exchange ul li:hover {
+    color: black;
+    background-color: #F5F5F5;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    outline: none;
+
+}
