@@ -1,73 +1,71 @@
 .Exchange {
-    background-color: white;
-    width: 100%;
-    border-radius: 10px;
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .Exchange ul {
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    grid-template-columns: 30% 30% 30%;
-    padding: 10px 0 20px 0;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: 30% 30% 30%;
+  padding: 10px 0 20px 0;
 }
 
 .Exchange ul li {
-    padding-bottom: 5px;
-    padding-top: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 .Exchange a {
-    color: #808080;
-    text-decoration: none;
+  color: #808080;
+  text-decoration: none;
 }
 
 .Exchange a:focus {
-    color: black;
-    background-color: #F5F5F5;
+  color: black;
+  background-color: #f5f5f5;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .Exchange {
+    margin-top: 30px;
+  }
+
+  .Exchange ul {
+    height: 130px;
+    padding-top: 20px;
+  }
+  .Exchange a:focus {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .Exchange {
+    margin-bottom: 200px;
+  }
+
+  .Exchange ul {
+    width: 700px;
+    grid-template-columns: 15% 15% 15% 15% 15% 15%;
+    justify-content: flex-start;
+  }
+
+  .Exchange a:focus {
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    border-radius: 10px;
-    text-decoration: none;
-    outline: none;
-}
-
-@media (min-width: 768px) {
-    .Exchange {
-        margin-top: 30px;
-    }
-
-    .Exchange ul {
-        height: 130px;
-        padding-top: 20px;
-    }
-    .Exchange a:focus {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left: 20px;
-        padding-right: 20px;
-
-    }
-}
-
-@media (min-width: 992px) {
-    .Exchange {
-        margin-bottom: 200px;
-    }
-
-    .Exchange ul {
-        width: 700px;
-        grid-template-columns: 15% 15% 15% 15% 15% 15%;
-        justify-content: flex-start;
-    }
-
-    .Exchange a:focus {
-        padding-top: 5px;
-        padding-bottom: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
-
-    }
+  }
 }

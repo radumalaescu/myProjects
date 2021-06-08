@@ -1,97 +1,98 @@
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .RonUsd {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-
 #switch {
-    display: block;
-    width: 30px;
-    height: 30px;
-    margin-top: 10px;
-    font-size: 8px;
-    border-radius: 50%;
-    color:	#1E90FF;
-    background-color: white;
-    border: 2px solid 	#1E90FF;
-    outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  font-size: 8px;
+  border-radius: 50%;
+  color: #1e90ff;
+  background-color: white;
+  border: 2px solid #1e90ff;
+  outline: none;
 }
 
 .RonUsd div {
-    width: 165px;
+  width: 165px;
 }
 
 .RonUsd img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: block;
 }
 
 .RonUsd input {
-    border: 1px solid black;
-    border-radius: 5px;
-    outline: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
 }
 
 #convert {
-    width: 165px;
-    margin-top: 5px;
-    border-radius: 5px;
-    background-color: #1E90FF;
-    color: white;
-    outline: none;
-    border: none;
-    margin-bottom: 20px;
+  width: 165px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background-color: #1e90ff;
+  color: white;
+  outline: none;
+  border: none;
+  margin-bottom: 20px;
 }
 
 .RonUsd span {
-    font-size: 10px;
-    color:lightgrey;
+  font-size: 10px;
+  color: lightgrey;
 }
 
 .RonUsd p {
-    color: red;
-    font-size: 10px;
-    margin: 0;
+  color: red;
+  font-size: 10px;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
-    .RonUsd div {
-        width: 350px;
-    }
+  .RonUsd div {
+    width: 350px;
+  }
 
-    .RonUsd img {
-        width: 50px;
-        height: 50px;
-    }
+  .RonUsd img {
+    width: 50px;
+    height: 50px;
+  }
 
-    .RonUsd input {
-        width: 100%;
-        height: 30px;
-    }
+  .RonUsd input {
+    width: 100%;
+    height: 30px;
+  }
 
-    .RonUsd span {
-        font-size: 16px;
-    }
+  .RonUsd span {
+    font-size: 16px;
+  }
 
-    #switch {
-        width: 50px;
-        height: 50px;
-        font-size: 14px;
-    }
+  #switch {
+    width: 50px;
+    height: 50px;
+    font-size: 14px;
+  }
 
-    #convert {
-        width: 350px;
-        height: 30px;
-        margin-top: 10px;
-    }
-}   
+  #convert {
+    width: 350px;
+    height: 30px;
+    margin-top: 10px;
+  }
+}
