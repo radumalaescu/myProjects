@@ -26,7 +26,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .RonUsd div {
-    width: 50%;
+    width: 165px;
 }
 
 .RonUsd img {
@@ -43,13 +43,14 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 #convert {
-    width: 50%;
+    width: 165px;
     margin-top: 5px;
     border-radius: 5px;
     background-color: #1E90FF;
     color: white;
     outline: none;
     border: none;
+    margin-bottom: 20px;
 }
 
 .RonUsd span {
@@ -62,3 +63,35 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 10px;
     margin: 0;
 }
+
+@media (min-width: 768px) {
+    .RonUsd div {
+        width: 350px;
+    }
+
+    .RonUsd img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .RonUsd input {
+        width: 100%;
+        height: 30px;
+    }
+
+    .RonUsd span {
+        font-size: 16px;
+    }
+
+    #switch {
+        width: 50px;
+        height: 50px;
+        font-size: 14px;
+    }
+
+    #convert {
+        width: 350px;
+        height: 30px;
+        margin-top: 10px;
+    }
+}   

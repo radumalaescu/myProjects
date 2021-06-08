@@ -1,5 +1,5 @@
 .AllAccounts {
-    padding: 0 20px 0 20px;
+    padding: 0 20px 10px 20px;
 }
 
 .AllAccounts p {
@@ -20,4 +20,31 @@
     height: 30px;
     margin-left: 10px;
     border-radius: 50%;
+}
+
+@media (min-width: 768px) { 
+    .AllAccounts {
+        padding: 0 20px 10px 20px;
+    }
+
+    .AllAccounts img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .AllAccounts p {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .AllAccounts span {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    .AllAccounts img {
+        width: 70px;
+        height: 70px;
+    }
 }

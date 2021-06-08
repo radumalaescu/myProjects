@@ -4,7 +4,7 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
 
-.RonEur {
+.UsdGbp {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,18 +25,18 @@ input[type=number]::-webkit-outer-spin-button {
     outline: none;
 }
 
-.RonEur div {
+.UsdGbp div {
     width: 165px;
 }
 
-.RonEur img {
+.UsdGbp img {
     width: 30px;
     height: 30px;
     border-radius: 50%;
     display: block;
 }
 
-.RonEur input {
+.UsdGbp input {
     border: 1px solid black;
     border-radius: 5px;
     outline: none;
@@ -53,33 +53,33 @@ input[type=number]::-webkit-outer-spin-button {
     margin-bottom: 20px;
 }
 
-.RonEur span {
+.UsdGbp span {
     font-size: 10px;
     color:lightgrey;
 }
 
-.RonEur p {
+.UsdGbp p {
     color: red;
     font-size: 10px;
     margin: 0;
 }
 
 @media (min-width: 768px) {
-    .RonEur div {
+    .UsdGbp div {
         width: 350px;
     }
 
-    .RonEur img {
+    .UsdGbp img {
         width: 50px;
         height: 50px;
     }
 
-    .RonEur input {
+    .UsdGbp input {
         width: 100%;
         height: 30px;
     }
 
-    .RonEur span {
+    .UsdGbp span {
         font-size: 16px;
     }
 

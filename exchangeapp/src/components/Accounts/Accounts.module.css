@@ -55,3 +55,15 @@
 
 }
 
+@media (min-width: 768px) {
+    .Accounts {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 992px) {
+    .Accounts {
+        display: block;
+        margin-bottom: 200px;
+    }
+}

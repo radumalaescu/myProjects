@@ -4,6 +4,8 @@
     background-color: #F5F5F5;
     padding-left: 25px;
     padding-right: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 .App ul {
@@ -30,3 +32,42 @@
   font-size: 12px;
   font-weight: bold;
 }
+
+.App a {
+  color: #808080;
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .App ul {
+    grid-auto-columns: 150px;
+  }
+
+  .App ul li{
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) { 
+  .App {
+    flex-direction: row;
+  }
+
+  .App ul {
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+  }
+
+  #Applist {
+    margin-top: 50px;
+  }
+
+  #Applist li {
+    margin-bottom: 10px;
+  }
+
+  .App ul li {
+    font-size: 14px;
+  }
+ }

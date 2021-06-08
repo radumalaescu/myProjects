@@ -2,16 +2,16 @@ import React, {useRef, useEffect } from 'react'
 import styles from './Accounts.module.css'
 import AllAccounts from './AllAccounts/AllAccounts'
 import SingleAccount from './SingleAccount/SingleAccount'
+import roFlag from '../../images/ro.png'
+import euFlag from '../../images/eu.png'
+import usFlag from '../../images/us.png'
+import ukFlag from '../../images/uk.png'
 import {
     BrowserRouter as Router,
     Switch,
     Route,
     Link
 } from "react-router-dom";
-import roFlag from '../../images/ro.png'
-import euFlag from '../../images/eu.png'
-import usFlag from '../../images/us.png'
-import ukFlag from '../../images/uk.png'
 
 const Accounts = ({ ronBallance, eurBallance, usdBallance, gbpBallance }) => {
     const allRef = useRef()
@@ -20,7 +20,7 @@ const Accounts = ({ ronBallance, eurBallance, usdBallance, gbpBallance }) => {
         allRef.current.focus()
     }, [])
 
-    const totalBallance = ronBallance + eurBallance * 4.92 + usdBallance * 4.2 + gbpBallance * 5.5
+    const totalBallance = ronBallance + eurBallance * 4.92 + usdBallance * 4.06 + gbpBallance * 5.73
     return (
         <Router>
             <div className={styles.Accounts}>

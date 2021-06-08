@@ -1,5 +1,5 @@
 .SingleAccount {
-    padding: 0 20px 0 20px;
+    padding: 0 20px 10px 20px;
 }
 
 .SingleAccount p {
@@ -13,6 +13,7 @@
 .SingleAccount span {
     font-size: 12px;
     color:lightgrey;
+    margin-bottom: 20px;
 }
 
 .SingleAccount img{
@@ -23,3 +24,29 @@
 
 }
 
+@media (min-width: 768px) { 
+    .SingleAccount {
+        padding: 0 20px 10px 20px;
+    }
+
+    .SingleAccount img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .SingleAccount p {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .SingleAccount span {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    .SingleAccount img{
+        width: 70px;
+        height: 70px;
+    }
+}
