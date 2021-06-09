@@ -20,7 +20,7 @@ const Portofolio = (props, ref) => {
         Portofolio
       </h1>
       <div className={styles.portofolioItemFlex}>
-        <span data-aos={"fade-up"} data-aos-delay={"1200"} data-aos-once={true}>
+        <span>
           <a
             href="http://www.exchangeapp.radumalaescu.ro/"
             target="_blank"
@@ -29,7 +29,7 @@ const Portofolio = (props, ref) => {
             <img src={exchangeapp} alt="Exchange App"></img>
           </a>
         </span>
-        <span data-aos={"fade-up"} data-aos-delay={"800"} data-aos-once={true}>
+        <span>
           <a
             href="http://www.countries.radumalaescu.ro/"
             target="_blank"
@@ -38,7 +38,7 @@ const Portofolio = (props, ref) => {
             <img src={countries} alt="Countries Api"></img>
           </a>
         </span>
-        <span data-aos={"fade-up"} data-aos-delay={"1600"} data-aos-once={true}>
+        <span>
           <a
             href="http://www.rockpaperscissors.radumalaescu.ro/"
             target="_blank"
@@ -47,7 +47,7 @@ const Portofolio = (props, ref) => {
             <img src={rockpaperscissors} alt="Rock Paper Scissors"></img>
           </a>
         </span>
-        <span data-aos={"fade-up"} data-aos-delay={"2000"} data-aos-once={true}>
+        <span>
           <a
             href="http://www.tictactoe.radumalaescu.ro/"
             target="_blank"
