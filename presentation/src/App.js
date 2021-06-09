@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import Aboutme from './components/Aboutme/Aboutme';
 import Header from './components/Header/Header'
 import Portofolio from './components/Portofolio/Portofolio';
-import Contact from './Contact/Contact';
+import Contact from './components/Contact/Contact';
 import './App.css'
 
 const App = () => {

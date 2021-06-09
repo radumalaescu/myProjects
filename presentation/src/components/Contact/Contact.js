@@ -1,8 +1,8 @@
 import React, { forwardRef } from 'react';
 import styles from './Contact.module.css'
-import Fb from '../images/fb.png'
-import Ldin from '../images/ldin.png'
-import Github from '../images/github.png'
+import Fb from '../../images/fb.png'
+import Ldin from '../../images/ldin.png'
+import Github from '../../images/github.png'
 import { PhoneTwoTone, MailTwoTone } from '@ant-design/icons';
 
 const Contact = (props, ref) => {
