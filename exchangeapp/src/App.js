@@ -5,12 +5,12 @@ import Exchange from "./components/Exchange/Exchange";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const App = () => {
-  const [ronBallance, setRonBallance] = useState(1000);
-  const [eurBallance, setEurBallance] = useState(100);
-  const [usdBallance, setUsdBallance] = useState(50);
-  const [gbpBallance, setGbpBallance] = useState(25);
-  const [ronEurValue, setRonEurValue] = useState("");
-  const [eurRonValue, setEurRonValue] = useState("");
+  const [ronBallance, setRonBallance] = useState(1000); //initial ballance
+  const [eurBallance, setEurBallance] = useState(0);
+  const [usdBallance, setUsdBallance] = useState(0);
+  const [gbpBallance, setGbpBallance] = useState(0);
+  const [ronEurValue, setRonEurValue] = useState(""); //input value, empty by default
+  const [eurRonValue, setEurRonValue] = useState(""); 
   const [ronGbpValue, setRonGbpValue] = useState("");
   const [gbpRonValue, setGbpRonValue] = useState("");
   const [ronUsdValue, setRonUsdValue] = useState("");
@@ -21,24 +21,25 @@ const App = () => {
   const [gbpEurValue, setGbpEurValue] = useState("");
   const [usdGbpValue, setUsdGbpValue] = useState("");
   const [gbpUsdValue, setGbpUsdValue] = useState("");
-  const [isDisabled, setIsDisabled] = useState(false);
-  const [hideErrorNumbers, setHideErrorNumbers] = useState({ display: "none" });
-  const [hideErrorBallance, setHideErrorBallance] = useState({
+  const [isDisabled, setIsDisabled] = useState(false); // check if input is disabled
+  const [hideErrorNumbers, setHideErrorNumbers] = useState({ display: "none" }); //error if you not provide a number
+  const [hideErrorBallance, setHideErrorBallance] = useState({ //error if you don't have enough money
     display: "none",
   });
 
   const changeValue = (event, setFirstValue, setSecondValue, multiply) => {
+    //input value, auto set second input value
     setFirstValue(event.target.value);
     setSecondValue((event.target.value * multiply).toFixed(2));
   };
 
-  const clickDisable = (setFirstValue, setSecondValue) => {
+  const clickDisable = (setFirstValue, setSecondValue) => {  //switch disable to the other input
     setIsDisabled(!isDisabled);
     setFirstValue("");
     setSecondValue("");
   };
 
-  const updateBallance = (
+  const updateBallance = (  //updates ballace according the input value 
     firstValue,
     secondValue,
     firstBallance,
@@ -55,7 +56,7 @@ const App = () => {
     }
   };
 
-  const updateBallanceError = (
+  const updateBallanceError = ( //uses updateBallance function after check for errors
     firstValue,
     secondValue,
     firstBallance,
@@ -73,8 +74,8 @@ const App = () => {
     } else {
       setHideErrorNumbers({ display: "none" });
       setHideErrorBallance({ display: "none" });
-      if (firstValue === ronEurValue) {
-        return updateBallance(
+      if (firstValue === ronEurValue) { //check the first value to know what ballace to update
+         updateBallance(
           firstValue,
           secondValue,
           firstBallance,
@@ -84,7 +85,7 @@ const App = () => {
         );
       }
       if (firstValue === ronUsdValue) {
-        return updateBallance(
+         updateBallance(
           firstValue,
           secondValue,
           firstBallance,
@@ -94,7 +95,7 @@ const App = () => {
         );
       }
       if (firstValue === ronGbpValue) {
-        return updateBallance(
+         updateBallance(
           firstValue,
           secondValue,
           firstBallance,
@@ -104,7 +105,7 @@ const App = () => {
         );
       }
       if (firstValue === eurUsdValue) {
-        return updateBallance(
+         updateBallance(
           firstValue,
           secondValue,
           firstBallance,
@@ -114,7 +115,7 @@ const App = () => {
         );
       }
       if (firstValue === eurGbpValue) {
-        return updateBallance(
+         updateBallance(
           firstValue,
           secondValue,
           firstBallance,
@@ -124,7 +125,7 @@ const App = () => {
         );
       }
       if (firstValue === usdGbpValue) {
-        return updateBallance(
+         updateBallance(
           firstValue,
           secondValue,
           firstBallance,
